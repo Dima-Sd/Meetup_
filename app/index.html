@@ -4,11 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>
+        Meetup platform
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__content">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="./images/logo.svg" alt="Meetup platform logo">
+                </a>
+                <form class="form">
+                    <label class="form__label" for="events">
+                        <input class="form__input" type="events" name="events" id="events" required>
+                    </label>
+                    <label class="form__label" for="mountain">
+                        <input class="form__input" type="events" name="events" id="mountain" required>
+                    </label>
+                </form>
+            </div>
+            <div class="header__info">
+                <button class="header__lunguage">
+                    English
+                </button>
+                <a href="#" class="header__login">
+                    Log in
+                </a>
+                <a href="#" class="header__login">
+                    Sign up
+                </a>
+            </div>
+        </div>
+    </header>
     <script src="js/main.min.js"></script>
 </body>
 
