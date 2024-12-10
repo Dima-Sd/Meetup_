@@ -15,33 +15,54 @@
 
 <body>
     <header class="header">
-        <div class="container header__container">
-            <div class="header__content">
-                <a class="logo" href="#">
-                    <img class="logo__img" src="./images/logo.svg" width="94" height="34" alt="Meetup platform logo">
-                </a>
-                <form class="form">
-                    <label class="form__label form__label--radius" for="events">
-                        <input class="form__input form__input--dark" type="events" name="events" id="events" placeholder="Search events" required >
-                    </label>
-                    <label class="form__label form__label--big" for="mountain">
-                        <input class="form__input" type="events" name="events" id="mountain" placeholder="Mountain View, CA" required>
-                    </label>
-                </form>
-            </div>
-            <div class="header__info">
-                <button class="header__lunguage">
-                    English
-                </button>
-                <a href="#" class="header__login">
-                    Log in
-                </a>
-                <a href="#" class="header__signup">
-                    Sign up
-                </a>
-            </div>
+        <a class="logo" href="#">
+            <img class="logo__img" src="./images/logo.svg" width="94" height="34" alt="Meetup platform logo">
+        </a>
+        <form class="form">
+            <label class="form__label form__label--radius" for="events">
+                <input class="form__input form__input--dark" type="events" name="events" id="events"
+                    placeholder="Search events" required>
+            </label>
+            <label class="form__label form__label--big" for="mountain">
+                <input class="form__input" type="events" name="events" id="mountain" placeholder="Mountain View, CA"
+                    required>
+            </label>
+        </form>
+        <div class="header__info">
+            <button class="header__lunguage">
+                English
+            </button>
+            <a href="#" class="header__login">
+                Log in
+            </a>
+            <a href="#" class="button">
+                Sign up
+            </a>
         </div>
     </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <h1 class="hero__title">
+                        The people platform—Where
+                        interests become friendships
+                    </h1>
+
+                    <p class="hero__description">
+                        Whatever your interest, from hiking and reading to networking and skill sharing,
+                        there are thousands of people who share it on Meetup. Events are happening
+                        every day—sign up to join the fun.
+                    </p>
+
+                    <a class="button" href="#">
+                        Join Meetup
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="js/main.min.js"></script>
 </body>
 

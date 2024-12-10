@@ -1,15 +1,8 @@
 .header {
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 11px 0;
-    }
-
-    &__content {
-        display: flex;
-        align-items: center;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 50px;
 
     &__info {
         display: flex;
@@ -37,20 +30,14 @@
             background-repeat: no-repeat;
         }
     }
-
-    &__signup {
-        color: $white;
-        background-color: $accent;
-        padding: 8px 16px;
-        border-radius: 8px;
-    }
 }
 
 .form {
-    max-width: 592px;
+    max-width: 560px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-right: auto;
     position: relative;
 
     &::after {
@@ -61,7 +48,7 @@
         height: 42px;
         background-color: $secondary;
         border-radius: 0 8px 8px 0;
-        right: 0;
+        right: -36px;
     }
 
     &__label {
@@ -70,6 +57,8 @@
     }
 
     &__label--radius {
+        max-width: 300px;
+        width: 100%;
         border-radius: 8px 0 0 8px;
         position: relative;
 
@@ -86,12 +75,14 @@
     }
 
     &__label--big {
+        max-width: 254px;
+        width: 100%;
         position: relative;
 
         &::after {
             content: "";
             position: absolute;
-            right: -7px;
+            right: -31px;
             top: 50%;
             width: 20px;
             height: 20px;
@@ -102,6 +93,10 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+    }
+
+    &__input {
+        width: 100%;
     }
 
     &__input--dark {

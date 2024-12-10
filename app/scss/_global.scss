@@ -17,3 +17,11 @@ body {
 .logo {
     margin-right: 40px;
 }
+
+.button {
+    display: inline-block;
+    color: $white;
+    background-color: $accent;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
