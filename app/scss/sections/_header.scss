@@ -3,5 +3,108 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 11px 0;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 21px;
+        font-size: 14px;
+        font-weight: 500;
+        color: $dark-900;
+    }
+
+    &__lunguage {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -24px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background-image: url('../../images/planet.svg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__signup {
+        color: $white;
+        background-color: $accent;
+        padding: 8px 16px;
+        border-radius: 8px;
+    }
+}
+
+.form {
+    max-width: 592px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        width: 42px;
+        height: 42px;
+        background-color: $secondary;
+        border-radius: 0 8px 8px 0;
+        right: 0;
+    }
+
+    &__label {
+        border: 1px solid $dark-light;
+        padding: 8px;
+    }
+
+    &__label--radius {
+        border-radius: 8px 0 0 8px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('../../images/search-dark.svg');
+        }
+    }
+
+    &__label--big {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: -7px;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            z-index: 20;
+            transform: translateY(-50%);
+            background-image: url('../../images/search-light.svg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__input--dark {
+        padding-left: 28px;
     }
 }
