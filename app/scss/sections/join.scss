@@ -1,23 +1,10 @@
 .join {
     &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 36px 56px;
         background-color: $accent-tint-8;
-        position: relative;
-
-        &::after {
-            content: "";
-            position: absolute;
-            right: 56px;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: -15;
-            width: 341px;
-            height: 196px;
-            background-image: url('../images/hands.jpg');
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
     }
 
     &__inner {
@@ -36,5 +23,30 @@
         font-weight: 500;
         border-radius: 8px;
         color: $light;
+    }
+
+    &-mob {
+        display: none;
+    }
+
+    &__img {
+        position: relative;
+        z-index: -11;
+    }
+
+    &__picture {
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    .join {
+        &-desk {
+            display: none;
+        }
+
+        &-mob {
+            display: block;
+        }
     }
 }

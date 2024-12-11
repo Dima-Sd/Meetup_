@@ -35,6 +35,7 @@
     &__content {
         display: flex;
         justify-content: space-between;
+        gap: 20px;
         padding: 24px 0;
     }
 
@@ -62,8 +63,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 20px;
         margin-bottom: 51px;
-        
     }
 }
 
@@ -95,5 +96,36 @@
 
     &__link--light {
         color: $light;
+    }
+}
+
+@media (max-width: 992px) {
+    .policy__link {
+        display: none;
+
+        &--light {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__text {
+        margin-right: 20px;
+    }
+
+    .platform {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer__box {
+        display: block;
+    }
+
+    .footer__text {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 }
