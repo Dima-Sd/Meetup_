@@ -1,0 +1,32 @@
+.workflow {
+    padding-top: 0;
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 24px;
+        max-width: 580px;
+        width: 100%;
+        padding: 32px 97px 24px 24px;
+        border-radius: 8px;
+        background-color: $accent-tint-8;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        list-style: 1.2;
+        margin-bottom: 16px;
+    }
+
+    &__description {
+        margin-bottom: 16px;
+    }
+}

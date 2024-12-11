@@ -1,0 +1,40 @@
+.join {
+    &__container {
+        padding: 36px 56px;
+        background-color: $accent-tint-8;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 56px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: -15;
+            width: 341px;
+            height: 196px;
+            background-image: url('../../images/hands.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__inner {
+        max-width: 620px;
+        width: 100%;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 8px 66px;
+        background-color: $secondary;
+        font-weight: 500;
+        border-radius: 8px;
+        color: $light;
+    }
+}

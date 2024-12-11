@@ -3,25 +3,107 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #FFFFFF;
+    background-color: $light;
     font-family: "Roboto", sans-serif;
     font-style: normal;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
 .logo {
+    border-radius: 4px;
     margin-right: 40px;
+    transition: opacity 0.4s, outline 0.4s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:focus {
+        outline: 1px solid $secondary;
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
 }
 
 .button {
     display: inline-block;
-    color: $white;
+    color: $light;
     background-color: $accent;
     padding: 8px 16px;
     border-radius: 8px;
 }
+
+.title {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: $dark-900;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+}
+
+.link {
+    color: $accent;
+    font-weight: 500;
+    border-radius: 4px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.4s, outline 0.4s, opacity 0.4s, outline-offset 0.4s;
+
+    &:hover {
+        border-color: $accent;
+    }
+
+    &:focus {
+        outline-offset: 4px;
+        outline: 1px solid $accent;
+    }
+
+    &:active {
+        opacity: 0.7;
+        border-bottom: 0;
+    }
+}
+
+.section {
+    padding: 64px 0;
+}
+
+.icon {
+    fill: currentColor;
+}
+
+.banner {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 5px;
+    left: 10px;
+    gap: 4px;
+    border-radius: 4px;
+    background-color: $light;
+    padding: 2px 8px 2px 4px;
+    color: $grey;
+    font-size: 12px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.wrapper {
+    padding-top: 81px;
+}
+
+@import "./global/footer";

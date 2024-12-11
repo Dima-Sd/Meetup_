@@ -1,11 +1,18 @@
 $accent: #00798A;
+$accent-tint-12: rgba(#97CAD1, 0.12);
+$accent-tint-8: rgba(#97CAD1, 0.08);
 $secondary: #F65858;
+
 
 $dark: #000000;
 $dark-900: #212121;
 $dark-light: #D9D9D9;
+$dark-light--opacity: rgba($dark-light, 0.8);
 
 
 $grey: #707070;
+$grey-800: #C5C4C4;
 
-$white: #fff;
+
+$light: #fff;
+$light-800: #F6F7F8;

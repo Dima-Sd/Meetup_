@@ -1,0 +1,88 @@
+.events-near {
+    &__title {
+        font-size: 28px;
+        line-height: 1.2;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        color: $accent;
+        font-size: 20px;
+        margin-bottom: 12px;
+        display: inline-block;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 4px;
+            width: 100%;
+            background-color: $accent;
+            bottom: 0;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 18px;
+        margin-bottom: 56px;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 16px;
+        border-radius: 40px;
+        background-color: $light-800;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__map {
+        position: relative;
+    }
+
+    &__map-text {
+        color: $dark-900;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    &__map-title {
+        font-weight: 500;
+        font-size: 20px;
+        color: $dark-900;
+        margin-bottom: 14px;
+        font-weight: 700;
+    }
+
+    &__map-button {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+        gap: 5px;
+        background-color: $light;
+        border: 2px solid $accent;
+        border-radius: 8px;
+        color: $accent;
+        padding: 10px 24px 10px 27px;
+        position: absolute;
+        z-index: 5;
+        top: 170px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__close {
+        position: absolute;
+        top: 75px;
+        right: 15px;
+        z-index: 5;
+    }
+}

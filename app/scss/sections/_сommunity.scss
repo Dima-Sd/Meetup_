@@ -1,0 +1,19 @@
+.community {
+    padding: 0 0 40px;
+
+    &__description {
+        margin-bottom: 28px;
+        color: $grey;
+        max-width: 830px;
+        width: 100%;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+}
+
+@import "../global/community-card"

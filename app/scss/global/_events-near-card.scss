@@ -1,0 +1,40 @@
+.events-near__card {
+    display: flex;
+    gap: 12px;
+    max-width: 604px;
+    width: 100%;
+    position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: $dark-light;
+        top: -16px;
+    }
+
+    &-date {
+        display: inline-block;
+        font-size: 14px;
+        color: #7C6F50;
+        margin-bottom: 4px;
+    }
+
+    &-title {
+        color: $dark-900;
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    &-text {
+        font-size: 14px;
+        color: #707070;
+        font-weight: 500;
+    }
+
+}
